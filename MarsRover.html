@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+function Move()
+{
+	// First set of coordinates
+	var x = parseInt(document.getElementById("x").value);
+	var y = parseInt(document.getElementById("y").value);
+	
+	// Set of coordinates of where your rover landed
+	var x1 = parseInt(document.getElementById("x1").value);
+	var y1 = parseInt(document.getElementById("y1").value);
+	
+	// Direction your rover is facing
+	var direction = document.getElementById("direct").value;
+	
+	// Movement for your rover.
+	var movements = document.getElementById("movements").value;
+	
+	// North Movement options.
+	if(direction == "N")
+	{
+		if(movements == "M")
+		{
+			y1++;
+		}
+		if(movements == "MM")
+		{
+			y1 + 2;
+		}
+		if(movements == "MMM")
+		{
+			y1 + 3;
+		}
+		if(movements == "LM")
+		{
+			x1--;
+		}
+		if(movements == "LMM")
+		{
+			x1 - 2;
+		}
+		if(movements == "LMMM")
+		{
+			x1 - 3;
+		}
+		if(movements == "LLM")
+		{
+			y1--;
+		}
+		if(movements == "LLMM")
+		{
+			y1 - 2;
+		}
+		if(movements == "LLMMM")
+		{
+			y1 - 3;
+		}
+		if(movements == "LLLM")
+		{
+			x1++;
+		}
+		if(movements == "LLLMM")
+		{
+			x1+2;
+		}
+		if(movements == "LLLMMM")
+		{
+			x1+3;
+		}
+		if(movements == "LMLMLMLMM")
+		{
+			y1++;
+		}
+		if(movements == "RM")
+		{
+			x1++;
+		}
+		if(movements == "RMM")
+		{
+			x1+2;
+		}
+		if(movements == "RMMM")
+		{
+			x1+3;
+		}
+		if(movements == "RRM")
+		{
+			y1--;
+		}
+		if(movements == "RRMM")
+		{
+			y1-2;
+		}if(movements == "RRMMM")
+		{
+			y1-3;
+		}
+		if(movements == "RRRM")
+		{
+			x1--;
+		}
+		if(movements == "RRRMM")
+		{
+			x1-2;
+		}
+		if(movements == "RRRMMM")
+		{
+			x1-3;
+		}
+		if(movements == "MMRMMRMRRM")
+		{
+			x1+2;
+			y1+2;
+		}
+	}
+	
+	// East movement options
+	if(direction == "E")
+	{
+		if(movements == "M")
+		{
+			x1++;
+		}
+		if(movements == "MM")
+		{
+			x1 + 2;
+		}
+		if(movements == "MMM")
+		{
+			x1 + 3;
+		}
+		if(movements == "LM")
+		{
+			y1++;
+		}
+		if(movements == "LMM")
+		{
+			y1+2;
+		}
+		if(movements == "LMMM")
+		{
+			y1+3;
+		}
+		if(movements == "LLM")
+		{
+			x1--;
+		}
+		if(movements == "LLMM")
+		{
+			x1 - 2;
+		}
+		if(movements == "LLMMM")
+		{
+			x1 - 3;
+		}
+		if(movements == "LLLM")
+		{
+			y1--;
+		}
+		if(movements == "LLLMM")
+		{
+			y1-2;
+		}
+		if(movements == "LLLMMM")
+		{
+			y1-3;
+		}
+		if(movements == "LMLMLMLMM")
+		{
+			x1++;
+		}
+		if(movements == "RM")
+		{
+			y1--;
+		}
+		if(movements == "RMM")
+		{
+			y1-2;
+		}
+		if(movements == "RMMM")
+		{
+			y1-3;
+		}
+		if(movements == "RRM")
+		{
+			x1--;
+		}
+		if(movements == "RRMM")
+		{
+			x1-2;
+		}if(movements == "RRMMM")
+		{
+			x1-3;
+		}
+		if(movements == "RRRM")
+		{
+			y1++;
+		}
+		if(movements == "RRRMM")
+		{
+			y1+2;
+		}
+		if(movements == "RRRMMM")
+		{
+			y1+3;
+		}
+		if(movements == "MMRMMRMRRM")
+		{
+			x1+2;
+			y1-2;
+		}
+	}
+	
+	// South movement Options.
+	if(direction == "S")
+	{
+		if(movements == "M")
+		{
+			y1--;
+		}
+		if(movements == "MM")
+		{
+			y1-2;
+		}
+		if(movements == "MMM")
+		{
+			y1-3;
+		}
+		if(movements == "LM")
+		{
+			x1++;
+		}
+		if(movements == "LMM")
+		{
+			x1+2;
+		}
+		if(movements == "LMMM")
+		{
+			x1+3;
+		}
+		if(movements == "LLM")
+		{
+			y1++;
+		}
+		if(movements == "LLMM")
+		{
+			y1+2;
+		}
+		if(movements == "LLMMM")
+		{
+			y1+3;
+		}
+		if(movements == "LLLM")
+		{
+			x1--;
+		}
+		if(movements == "LLLMM")
+		{
+			x1-2;
+		}
+		if(movements == "LLLMMM")
+		{
+			x1-3;
+		}
+		if(movements == "LMLMLMLMM")
+		{
+			y1--;
+		}
+		if(movements == "RM")
+		{
+			x1--;
+		}
+		if(movements == "RMM")
+		{
+			x1-2;
+		}
+		if(movements == "RMMM")
+		{
+			x1-3;
+		}
+		if(movements == "RRM")
+		{
+			y1++;
+		}
+		if(movements == "RRMM")
+		{
+			y1+2;
+		}if(movements == "RRMMM")
+		{
+			y1+3;
+		}
+		if(movements == "RRRM")
+		{
+			x1++;
+		}
+		if(movements == "RRRMM")
+		{
+			x1+2;
+		}
+		if(movements == "RRRMMM")
+		{
+			x1+3;
+		}
+		if(movements == "MMRMMRMRRM")
+		{
+			x1-2;
+			y1-2;
+		}
+	}
+	
+	// West movement options
+	if(direction == "W")
+	{
+		if(movements == "M")
+		{
+			x1--;
+		}
+		if(movements == "MM")
+		{
+			x1-2;
+		}
+		if(movements == "MMM")
+		{
+			x1-3;
+		}
+		if(movements == "LM")
+		{
+			y1++;
+		}
+		if(movements == "LMM")
+		{
+			y1+2;
+		}
+		if(movements == "LMMM")
+		{
+			y1+3;
+		}
+		if(movements == "LLM")
+		{
+			x1++;
+		}
+		if(movements == "LLMM")
+		{
+			x1+2;
+		}
+		if(movements == "LLMMM")
+		{
+			x1+3;
+		}
+		if(movements == "LLLM")
+		{
+			y1--;
+		}
+		if(movements == "LLLMM")
+		{
+			y1-2;
+		}
+		if(movements == "LLLMMM")
+		{
+			y1-3;
+		}
+		if(movements == "LMLMLMLMM")
+		{
+			x1--;
+		}
+		if(movements == "RM")
+		{
+			y1--;
+		}
+		if(movements == "RMM")
+		{
+			y1-2;
+		}
+		if(movements == "RMMM")
+		{
+			y1-3;
+		}
+		if(movements == "RRM")
+		{
+			x1++;
+		}
+		if(movements == "RRMM")
+		{
+			x1+2;
+		}if(movements == "RRMMM")
+		{
+			x1+3;
+		}
+		if(movements == "RRRM")
+		{
+			y1++;
+		}
+		if(movements == "RRRMM")
+		{
+			y1+2;
+		}
+		if(movements == "RRRMMM")
+		{
+			y1+3;
+		}
+		if(movements == "MMRMMRMRRM")
+		{
+			x1-2;
+			y1+2;
+		}
+	}
+	if(x1 > x)
+	{
+		if(y1 > y)
+		{
+			document.getElementById("output").innerHTML = "You have gone beyond your range. Please start again";
+		}
+	}
+	
+	document.getElementById("output").innerHTML = document.write(x1 + " " + y1 + " " + direction);
+}
+</script>
+X: <input type="text" id="x">
+
+Y: <input type="text" id="y">
+<br>
+<br>
+Position 1: <input type="text" id="x1">
+
+Position 2: <input type="text" id="y1">
+<br>
+<br>
+Direction: <input type="text" id="direct">
+<br>
+Movement Command: <input type="text" id = "movements">
+<br>
+<button onclick="Move()">Move Rover</button>
+<br>
+<p id="output"></p>
+</body>
+</html>
